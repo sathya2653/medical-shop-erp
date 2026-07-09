@@ -19,4 +19,9 @@
     <ProjectReference Include="../MedicalShopERP.Business/MedicalShopERP.Business.csproj" />
     <ProjectReference Include="../MedicalShopERP.Common/MedicalShopERP.Common.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
