@@ -30,17 +30,17 @@ namespace MedicalShopERP.UI
                     return;
                 }
 
-                var user = await _authService.AuthenticateAsync(username, password);
+                var (success, message) = await _authService.LoginAsync(username, password);
 
-                if (user != null)
+                if (success)
                 {
-                    MessageBox.Show($"Welcome {user.Username}!", "Login Successful", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show($"Welcome {username}!", "Login Successful", MessageBoxButton.OK, MessageBoxImage.Information);
                     // TODO: Navigate to dashboard
                     StatusMessage.Text = "";
                 }
                 else
                 {
-                    StatusMessage.Text = "Invalid username or password";
+                    StatusMessage.Text = message;
                 }
             }
             catch (Exception ex)
