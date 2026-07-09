@@ -1,0 +1,14 @@
+<Window x:Class="MedicalShopERP.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Medical Shop ERP" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    <Grid>
+        <TextBlock Text="Medical Shop ERP - Login" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" />
+    </Grid>
+</Window>
